@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,43 +18,47 @@
         <h3>회원가입</h3>
       </header>
 
+      <div class="line"></div>
+
       <main id="main_section">
         <div>
-          <label for="id" class="">아이디</label>
+          <label for="id" class="block">아이디</label>
           <input type="text" id="id" placeholder="아이디" />
-          <button type="button">중복확인</button>
+          <button type="button" class="check_btn">중복확인</button>
         </div>
 
         <div>
-          <label for="pw">비밀번호</label>
+          <label for="pw" class="block">비밀번호</label>
           <input type="password" id="pw" placeholder="비밀번호" />
         </div>
 
         <div>
-          <label for="pw_tc">비밀번호 확인</label>
-          <input type="password" id="pw_tc" placeholder="비밀번호확인" />
+          <label for="pw_tc" class="block">비밀번호 확인</label>
+          <input type="password" id="pw_tc" placeholder="비밀번호 확인" />
         </div>
 
         <div>
-          <label for="name">이름</label>
+          <label for="name" class="block">이름</label>
           <input type="text" id="name" placeholder="이름" />
         </div>
 
         <div>
           <label for="man woman">성별</label>
-          <input type="radio" id="man" name="gender" />
-          <label for="man">남자</label>
-          <input type="radio" id="woman" name="gender" />
-          <label for="woman">여자</label>
+          <div class="gender">
+            <input type="radio" id="man" name="gender" />
+            <label for="man">남자</label>
+            <input type="radio" id="woman" name="gender" />
+            <label for="woman">여자</label>
+          </div>
         </div>
 
         <div>
-          <label for="birth">생년월일</label>
+          <label for="birth" class="block">생년월일</label>
           <input type="date" id="birth" placeholder="생년월일" />
         </div>
 
         <div>
-          <label for="address address_detail">주소</label>
+          <label for="address address_detail" class="block">주소</label>
           <input type="text" id="address" placeholder="주소를 입력하세요" />
           <input type="text" id="address_detail" placeholder="상세주소" />
         </div>
@@ -66,21 +76,23 @@
         </div>
 
         <div>
-          <label for="phone">전화번호</label>
+          <label for="phone" class="block">전화번호</label>
           <input type="tel" id="phone" placeholder="전화번호" />
-          <button type="button">인증요청</button>
+          <button type="button" class="check_btn">인증요청</button>
         </div>
       </main>
 
+      <div class="line"></div>
+
       <footer>
         <div>
-          <input type="checkbox" name="" id="agree" />
-          <label for="agree">
+          <input type="checkbox" id="agree" />
+          <label for="agree" id="check">
             <span>[필수] 이용약관 개인정보 수집 및 정보이용에 동의합니다.</span>
           </label>
         </div>
-        <button type="button">가입하기</button>
       </footer>
     </form>
+    <button type="submit" id="submit_btn">가입하기</button>
   </body>
 </html>
