@@ -31,10 +31,6 @@ button {
   transition: transform 200ms ease-in;
 }
 
-label {
-  margin-bottom: 2px;
-}
-
 button:hover {
   border: 2px solid #25ebb2;
   font-weight: bold;
@@ -43,6 +39,14 @@ button:hover {
   transform: scale(1.1);
 }
 
+label {
+  margin-bottom: 2px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
 #signup_form {
   width: 550px;
   height: auto;
@@ -117,6 +121,10 @@ label {
 
 #agree:hover {
   cursor: pointer;
+}
+
+.info_detail {
+  text-decoration: underline;
 }
 
 #submit_btn {
