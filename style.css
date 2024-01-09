@@ -47,6 +47,7 @@ a {
   color: black;
   text-decoration: none;
 }
+
 #signup_form {
   width: 550px;
   height: auto;
@@ -107,6 +108,11 @@ label {
 #address,
 #address_detail {
   width: 400px;
+}
+
+#tel_heading {
+  display: inline-block;
+  margin-right: 8px;
 }
 
 #tel {
